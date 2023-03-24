@@ -58,20 +58,17 @@ while (desafio != true)
     //Pesquisei uma forma de transformar o dado de entrada que é string para char
     string letra = Console.ReadLine();
     char caractere = letra[0];
-    bool acerto = true;
     //For passando por todo o vetor verificando se algum é igual
     for (int i = 0; i < palavraVetor.Length; i++)
     { 
         if (caractere == palavraVetor[i])
         {
             travessaoVetor[i] = caractere;
-            acerto = true;
             progresso = progresso + 1;
         }
     }
     if (progresso == palavraVetor.Length)
     {
-        desafio = false;
         break;
     }
     Console.WriteLine(travessaoVetor);
